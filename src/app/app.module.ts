@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { ImagePicker } from '@ionic-native/image-picker';
 
 
 import { SelectSearchableModule } from 'ionic-select-searchable';
@@ -57,6 +58,7 @@ import { HelperService } from '../api-services/helperServices';
     UpdateUserInfoPage
   ],
   providers: [
+    ImagePicker,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
